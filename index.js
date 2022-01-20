@@ -60,8 +60,9 @@ for(const i of td)
             fequation = equation
 
         }
-        else if (i.innerText == "C")
+        else if (i.innerText == "Clear")
         {
+            bool2 = false
             fequation = "Invalid" 
             small.style.visibility = "hidden"
             equation = "Invalid"
