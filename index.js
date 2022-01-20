@@ -4,6 +4,7 @@ const td = document.querySelectorAll(".td");
 const big = document.getElementById('big')
 const small = document.getElementById('small')
 let bool = true;
+let bool2 = false;
 
 let fequation = "";
 let equation = "";
@@ -22,7 +23,7 @@ for(const i of td)
             fequation = ""
             small.style.visibility = 'visible';
         }
-
+        
 
 
         if(i.innerText == "*" || i.innerText == "-" || i.innerText == "/" || i.innerText == "+")
@@ -31,11 +32,21 @@ for(const i of td)
             {
                 fequation += " " + i.innerText + " ";
                 bool = true;
+                bool2 = false
             }
 
         }
+        else if(i.innerText == ".")
+        {
+            if(!bool2)
+            {
+                fequation += i.innerText
+                equation += i.innerText
+                bool2 = true
+            }
+        }
 
-        else if (i.innerText != "="){
+        else if (i.innerText != "=" && i.innerText != "."){
             fequation += i.innerText;
             equation += i.innerText;
             bool = false;
