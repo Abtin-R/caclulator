@@ -60,7 +60,7 @@ for(const i of td)
             fequation = equation
 
         }
-        else if (i.innerText == "Clear")
+        else if (i.innerText == "C")
         {
             bool2 = false
             fequation = "Invalid" 
