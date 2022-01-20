@@ -3,6 +3,7 @@
 const td = document.querySelectorAll(".td");
 const big = document.getElementById('big')
 const small = document.getElementById('small')
+let bool = true;
 
 let fequation = "";
 let equation = "";
@@ -26,13 +27,18 @@ for(const i of td)
 
         if(i.innerText == "*" || i.innerText == "-" || i.innerText == "/" || i.innerText == "+")
         {
-            fequation += " " + i.innerText + " ";
+            if(!bool)
+            {
+                fequation += " " + i.innerText + " ";
+                bool = true;
+            }
 
         }
 
         else if (i.innerText != "="){
             fequation += i.innerText;
             equation += i.innerText;
+            bool = false;
             
         }
 
