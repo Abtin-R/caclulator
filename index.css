@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0;
+            transition-duration: 0;
+    
+}
+body {
+    background-color: #3b3b3b;
+}
+
+p, a, li, input, textarea, div, span, h1, h2, h3, h4, h5, h6{
+    font-family: Raleway, Helvetica, sans-serif;
+    -webkit-font-smoothing: anrialised;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 60px;
+}
+table {
+    
+    background-color: #1c1e1f;
+    margin: 0 auto;
+    width: 320px;
+    height: 600px;
+    box-shadow: 2px 0px 16px 9px #2e2e2e;
+    border-radius: 16px;
+}
+table tr {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+table tr td {
+    cursor: pointer;
+    font-size: 32px;
+    color: #d3962c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1e1e;
+    width: 60px;
+    height: 60px;
+    border-radius: 64px;
+    box-shadow: 1px 2px 3px 1px rgb(20, 20, 20), -1px -1px 4px 1px rgb(68, 68, 68);;
+
+
+}
+
+table tr td:hover {
+    background-color: #151616;
+}
+
+input {
+    text-align: center;
+    font-size: 32px;
+    color: #d3962c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1e1e;
+    width: 60px;
+    height: 60px;
+    border-radius: 64px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 3px 1px rgb(20, 20, 20), -1px -1px 4px 1px rgb(68, 68, 68);;
+}
+
+
+td + td {
+    margin-left: 12px;
+}
+
+#ac {
+    width: 204px;
+}
+#ac2 {
+    width: 204px;
+}
+
+#zero {
+    width: 132px;
+}
+
+#input {
+    cursor: default;
+    margin-top: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+    height: 125px;
+    border-radius: 16px;
+    box-shadow: inset 1px 2px 3px 1px rgb(8, 8, 8), inset -1px -1px 4px 2px rgb(54, 54, 54);
+    overflow: hidden;
+
+}
+#input:hover{
+    background-color: #1c1e1e;
+}
+#small {
+    color: #8d8d8d;
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+}
+#big {
+    margin-top: -30px;
+    width: 100%;
+    text-align: right;
+    font-size: 40px;
+}
+
+.ld {
+    color: rgb(194, 194, 194);
+}
